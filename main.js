@@ -1,6 +1,7 @@
 // Menú responsive
 const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav");
+const comprarButtons = document.querySelectorAll(".comprar");
 toggle.addEventListener("click", () => nav.classList.toggle("active"));
 
 // Simulación envío de formulario
@@ -12,3 +13,13 @@ if (form) {
     form.reset();
   });
 }
+
+comprarButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.textContent = "Comprado ✅";
+    button.style.backgroundColor = "green";
+    button.style.color = "white";
+    button.disabled = true;
+    alert("¡Gracias por tu compra! 🎉");
+  });
+});

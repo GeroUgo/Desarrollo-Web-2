@@ -352,6 +352,17 @@ td {
   font-weight: 400;
 }
 
+.comprar {
+  background-color: red;
+  width: fit-content;
+  text-align: center;
+}
+
+.comprar:hover {
+  background-color: rgb(236, 78, 78);
+  cursor: pointer;
+}
+
 /* === CTA FINAL === */
 .cta-final {
   text-align: center;
